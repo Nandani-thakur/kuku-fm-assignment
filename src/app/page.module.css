@@ -1,0 +1,59 @@
+/* Container for the entire page */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Header styling */
+.header {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+/* Main section for carousels and filtered items */
+.main {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Styling for individual carousels */
+.carousel {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Styling for the Load More section */
+.loadMore {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .carousel {
+    max-width: 100%;
+  }
+
+  .header {
+    margin-bottom: 10px;
+  }
+
+  .main {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    gap: 10px;
+  }
+}
